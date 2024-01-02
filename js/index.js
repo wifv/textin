@@ -22,7 +22,11 @@ document.body.addEventListener('keyup', key => {
         key.key != "ArrowLeft" &&
         key.key != "ArrowRight" &&
         key.key != "Unidentified" &&
-        key.key != "F" + Number
+        key.key != "F" + Number &&
+        key.key != "Meta" &&
+        key.key != "AudioVolumeUp" &&
+        key.key != "AudioVolumeDown" &&
+        key.key != "AudioVolumeMute"
         ) {
             lol += key.key;
             document.getElementById('text').innerText = lol;
